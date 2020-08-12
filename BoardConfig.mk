@@ -103,3 +103,53 @@ TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+
+# NOTE - Dont use '-' or blank spaces in flag values , otherwise it will create build errors or other bugs in recovery (Excluding SHRP_PATH,SHRP_REC). 
+
+# Path of your SHRP Tree
+
+SHRP_PATH := device/meizu/m1971
+
+# Maintainer name *
+
+SHRP_MAINTAINER := wwrrj
+
+# Device codename *
+
+SHRP_DEVICE_CODE := m1971
+
+# Recovery Type (It can be treble,normal,SAR) [Only for About Section] *
+
+SHRP_REC_TYPE := SAR
+
+# Recovery Type (It can be A/B or A_only) [Only for About Section] *
+
+SHRP_DEVICE_TYPE := A_Only
+
+SHRP_STATUSBAR_RIGHT_PADDING := 16
+
+SHRP_STATUSBAR_LEFT_PADDING := 16
+
+SHRP_NOTCH := true
+
+SHRP_EXPRESS := true
+
+SHRP_DARK := true
+
+SHRP_EDL_MODE := 1
+
+SHRP_INTERNAL := /sdcard 
+
+SHRP_OTG := /usb_otg
+
+SHRP_FLASH := 1
+
+SHRP_CUSTOM_FLASHLIGHT := true 
+
+SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness 
+
+SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness 
+
+SHRP_FONP_3 := /sys/class/leds/led:switch_0/brightness
+
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
